@@ -53,7 +53,7 @@ self.onmessage = async function(event) {
         // --- 4. Prepare the final API payload ---
         const defaultApiParameters = {
             model: llmSettings.model || machineConfig.llm,
-            max_tokens: llmSettings.max_tokens || 16384,
+            max_completion_tokens: llmSettings.max_tokens || 16384,
             temperature: llmSettings.temperature || 1.0,
             top_p: llmSettings.top_p || 0.9,
             response_format: {"type":"text"},
